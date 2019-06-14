@@ -1,4 +1,4 @@
-package src;
+
 
 public class Date {
    private int day,mounth,year ;
