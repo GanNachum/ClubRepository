@@ -1,6 +1,6 @@
-public class Event {
+public class EventType {
 
-    enum EventType{
+    enum EventTypeEnum{
         Party,
         Birthday,
         BBQ
