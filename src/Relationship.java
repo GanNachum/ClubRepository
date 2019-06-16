@@ -1,5 +1,3 @@
-package src;
-
 public class Relationship {
 
     public enum RelationshipType{

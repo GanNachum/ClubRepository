@@ -4,7 +4,7 @@ public class PersonEventRegistration_Main {
         person.setFirstName("1");
         person.setLastName("2");
         Money money = new Money(1);
-        PersonEventRegistration registration = new PersonEventRegistration(person,money );
+        PersonEventRegistration registration = new PersonEventRegistration(person,money);
         System.out.println(registration.toString());
 
     }
