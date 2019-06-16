@@ -6,7 +6,7 @@ public class City {
     }
 
     public City(){
-        this.setCityName("Rishon Lezion");
+        this.setCityName("");
     }
 
     public City (City other){

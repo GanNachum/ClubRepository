@@ -6,7 +6,7 @@ public class Country {
     }
 
     public Country(){
-        this.setName("israel");
+        this.setName("");
     }
 
     public Country (Country other){
