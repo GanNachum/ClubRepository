@@ -25,4 +25,13 @@ public class EventCostElement {
         this.price = price;
     }
 
+    //main
+    public class Main {
+
+        public static void main(String[] args) {
+            float price = 0;
+            Money money = new Money(price);
+            EventCostElement e = new EventCostElement(element, money);
+        }
+    }
 }

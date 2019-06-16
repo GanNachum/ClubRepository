@@ -5,7 +5,7 @@ class Location {
     City city;
     Street street;
     Building building;
-    string doorCode;
+    String doorCode;
     int floor;
     Apartment apartment;
     Zip	zip;
