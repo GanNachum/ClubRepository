@@ -60,7 +60,7 @@ public class PersonEventRegistration {
     public String toString() {
         return "PersonEventRegistartion{" +
                 "Name='" + this.Name + '\'' +
-                ", realPerson=" + this.realPerson.getFirstName() + this.realPerson.getLastName() +
+                ", realPerson=" + this.realPerson.getFirstName() + " " + this.realPerson.getLastName() +
                 ", effectivePerson=" + this.effectivePerson +
                 ", paid=" + this.paid.getValue() +
                 '}';
