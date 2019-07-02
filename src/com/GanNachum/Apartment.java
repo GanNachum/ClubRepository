@@ -4,7 +4,7 @@ class Apartment {
     private int apartmentNum;
 
     public Apartment(int apartmentNum) {
-        athis.partmentNum = apartmentNum;
+        this.apartmentNum = apartmentNum;
     }
 
     public int getApartmentNum() {
@@ -18,7 +18,7 @@ class Apartment {
     @Override
     public String toString() {
         return "Apartment{" +
-                "ApartmentNum=" + ApartmentNum +
+                "ApartmentNum=" + apartmentNum +
                 '}';
     }
 }
