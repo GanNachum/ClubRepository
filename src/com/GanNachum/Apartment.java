@@ -8,7 +8,7 @@ class Apartment {
     }
 
     public int getApartmentNum() {
-        return apartmentNum;
+        return this.apartmentNum;
     }
 
     public void setApartmentNum(int apartmentNum) {
