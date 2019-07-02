@@ -1,4 +1,6 @@
-public class City {
+package com.GanNachum;
+
+class City {
     String CityName;
 
     public City(String cityName) {

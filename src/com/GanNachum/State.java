@@ -1,3 +1,5 @@
+package com.GanNachum;
+
 public class State {
     public String state;
 

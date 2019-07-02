@@ -1,3 +1,5 @@
+package com.GanNachum;
+
 public class GPS {
     public double latitude;
     public double longitude;

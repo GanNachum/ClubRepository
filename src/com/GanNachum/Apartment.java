@@ -1,17 +1,18 @@
-public class Apartment {
-    int ApartmentNum;
+package com.GanNachum;
+
+class Apartment {
+    private int apartmentNum;
 
     public Apartment(int apartmentNum) {
-        ApartmentNum = apartmentNum;
-
+        athis.partmentNum = apartmentNum;
     }
 
     public int getApartmentNum() {
-        return ApartmentNum;
+        return apartmentNum;
     }
 
     public void setApartmentNum(int apartmentNum) {
-        ApartmentNum = apartmentNum;
+        this.apartmentNum = apartmentNum;
     }
 
     @Override

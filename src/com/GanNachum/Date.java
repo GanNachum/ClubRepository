@@ -1,18 +1,20 @@
-public class Date {
-   private int day,mounth,year ;
+package com.GanNachum;
+
+public class Date { 
+    private int day, month, year ;
     public Date(){
         this.setDay(0);
-        this.setMounth(0);
+        this.setMonth(0);
         this.setYear(0);
     }
     public Date(Date other){
-        this.setMounth(other.getMounth());
+        this.setMonth(other.getMonth());
         this.setYear(other.getYear());
         this.setDay(other.getDay());
     }
-    public Date(int day,int mounth,int year){
+    public Date(int day,int Month,int year){
         this.setDay(day);
-        this.setMounth(mounth);
+        this.setMonth(Month);
         this.setYear(year);
     }
 
@@ -20,48 +22,46 @@ public class Date {
         return day;
     }
 
-    public void setDay(int day) {
+    public void setDay(int day, int month, int year) {
         try {
-            if (mounth==2){
-                if (day<29 && day>-1){
-                    this.mounth= mounth;
+            if (month==2){
+                if (day<29 && day>=1){
+                    this.day=day;
                 }
                 else
                     throw new  IllegalArgumentException();
             }
-            else if(mounth==1 || mounth==3|| mounth == 5 || mounth == 7 ||mounth == 8||mounth == 10||mounth == 12 ){
+            else if(month==1 || month==3|| month == 5 || month == 7 ||month == 8||month == 10||month == 12 ){
                 if (day<32 && day>-1){
-                    this.mounth= mounth;
+                    this.month=month;
                 }
                 else
                     throw new  IllegalArgumentException();
             }
             else {
                 if (day < 32 && day > -1) {
-                    this.mounth = mounth;
+                    this.month = month;
                 } else
                     throw new  IllegalArgumentException();
             }
         }catch (Exception e){
-            e=null;
             System.out.println("illegal argument");
         }
 
     }
 
-    public int getMounth() {
-        return mounth;
+    public int getMonth() {
+        return month;
     }
 
-    public void setMounth(int mounth) {
+    public void setMonth(int Month) {
         try {
-            if (mounth<13 && mounth>-1){
-                this.mounth= mounth;
+            if (Month<13 && Month>-1){
+                this.month= Month;
             }
             else
                 throw new  IllegalArgumentException();
         }catch (Exception e){
-            e=null;
             System.out.println("illegal argument");
         }
 
@@ -78,7 +78,7 @@ public class Date {
 
     public boolean equals(Date other) {
         boolean result = false;
-        if (this.getDay()==other.getDay() &&  this.getMounth()== other.getMounth() && this.getYear() == other.getYear() ){
+        if (this.getDay()==other.getDay() &&  this.getMonth()== other.getMonth() && this.getYear() == other.getYear() ){
             result=true;
         }
         return result;
@@ -88,7 +88,7 @@ public class Date {
     public String toString() {
         return "src.Date{" +
                 "day=" + this.day +
-                ", mounth=" + this.mounth +
+                ", Month=" + this.month +
                 ", year=" + this.year +
                 '}';
     }

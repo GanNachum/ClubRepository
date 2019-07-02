@@ -1,4 +1,6 @@
-public class Building {
+package com.GanNachum;
+
+class Building {
     int buildingNum;
 
     public Building(int buildingNum) {

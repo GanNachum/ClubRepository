@@ -1,3 +1,5 @@
+package com.GanNachum;
+
 public class PersonEventRegistration {
     private String Name;
     private Person realPerson; // who paid the money
@@ -5,7 +7,7 @@ public class PersonEventRegistration {
     private Money paid;
 
 
-    //CTORS
+    // CTORS
 
     public PersonEventRegistration(String name, Person realPerson, Person effectivePerson, Money paid) {
         this.setName(name);
@@ -29,7 +31,9 @@ public class PersonEventRegistration {
         this.realPerson = person;
     }
 
-    public void setEffectivePerson(Person EffectivePerson) {
+    public void setEffectivePerson(Person effectivePerson) {
+        this.effectivePerson = effectivePerson;
+
     }
 
     public void setPaid(Money money) {
@@ -58,7 +62,7 @@ public class PersonEventRegistration {
 
     @Override
     public String toString() {
-        return "PersonEventRegistartion{" +
+        return "PersonEventRegistration{" +
                 "Name='" + this.Name + '\'' +
                 ", realPerson=" + this.realPerson.getFirstName() + " " + this.realPerson.getLastName() +
                 ", effectivePerson=" + this.effectivePerson +

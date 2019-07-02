@@ -1,4 +1,6 @@
-public class Country {
+package com.GanNachum;
+
+class Country {
     String CountryName;
 
     public Country(String name) {

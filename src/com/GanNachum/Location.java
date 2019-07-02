@@ -1,3 +1,5 @@
+package com.GanNachum;
+
 class Location {
     GPS gps;
     Country country;

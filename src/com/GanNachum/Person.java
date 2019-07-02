@@ -1,10 +1,10 @@
-import java.net.URL;
+//import java.net.URL;
+package com.GanNachum;
 
 class Person {
     private String firstName;
     private String lastName;
     private String maidenName;
-    private double age;
     private Date birthday;
     //Gender gender;
     //Job[] jobs;
@@ -12,14 +12,12 @@ class Person {
     private URL[] facebookPages;
     private URL[] linkedInProfiles;
     private URL[] twitters;
-    private URL[] instagrams;
+    private URL[] Instagram;
     private URL[] otherWebsites;
     public Person(){
     }
     public void  age(){
-    }
-    public void Calculate_age(){
-
+        return 23;
     }
 
     public void setFirstName(String firstName) {
@@ -58,8 +56,8 @@ class Person {
         this.twitters = twitters;
     }
 
-    public void setInstagrams(URL[] instagrams) {
-        this.instagrams = instagrams;
+    public void setInstagram(URL[] instagram) {
+        this.Instagram = instagram;
     }
 
     public void setOtherWebsites(URL[] otherWebsites) {
@@ -102,13 +100,12 @@ class Person {
         return twitters;
     }
 
-    public URL[] getInstagrams() {
-        return instagrams;
+    public URL[] getInstagram() {
+        return Instagram;
     }
 
     public URL[] getOtherWebsites() {
         return otherWebsites;
     }
-
 
 } //

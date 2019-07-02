@@ -1,3 +1,5 @@
+package com.GanNachum;
+
 public class Money_main {
     public static void main(String[] args) {
         Money money = new Money(40);

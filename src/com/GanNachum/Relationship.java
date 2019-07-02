@@ -1,3 +1,5 @@
+package com.GanNachum;
+
 public class Relationship {
 
     public enum RelationshipType{
